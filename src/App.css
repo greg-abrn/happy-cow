@@ -1,0 +1,16 @@
+/* HEADER */
+
+header {
+  height: 60px;
+  background-color: yellow;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 38px;
+}
