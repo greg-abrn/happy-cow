@@ -9,7 +9,10 @@ const App = () => {
       <header>
         <nav>
           <div>
-            <img src={logoHappyCow} alt="Logo Happy Cow" />
+            <a href="https://www.happycow.net/">
+              <img src={logoHappyCow} alt="Logo Happy Cow" />
+            </a>
+
             <span>Explore</span>
             <span>Forum</span>
             <span>Blog</span>
@@ -18,9 +21,9 @@ const App = () => {
             <span>More</span>
           </div>
           <div>
-            <IoMdSearch />
-            <button>Add Listing</button>
-            <button>Login / Join</button>
+            <IoMdSearch className="search" />
+            <button className="button1">Add Listing</button>
+            <button className="button2">Login / Join</button>
           </div>
         </nav>
         <div></div>
