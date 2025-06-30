@@ -49,9 +49,20 @@ header nav div:hover {
 .button2:hover {
   opacity: 80%;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 div button {
+  border: solid 1px rgb(124 78 196);
+  padding: 8px 6px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.right-header button {
   border: solid 1px rgb(124 78 196);
   padding: 8px 6px;
   border-radius: 5px;
@@ -95,10 +106,11 @@ div > div > input {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border-radius: 5px 0 0 5px;
   border: none;
   color: #9a9a9a;
+  height: 50px;
 }
 
 div > div > button {
@@ -106,4 +118,29 @@ div > div > button {
   color: white;
   font-size: 28px;
   border-radius: 0 5px 5px 0;
+  padding: 7px 10px;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-button {
+  border: solid 1px rgb(124 78 196);
+  border-radius: 0 5px 5px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  height: 50px;
+  color: white;
+  font-size: 28px;
+  background-color: rgb(124 78 196);
+}
+
+.input-button:hover {
+  cursor: pointer;
+  opacity: 80%;
 }

@@ -19,7 +19,7 @@ const App = () => {
             <span>Shop</span>
             <span>More</span>
           </div>
-          <div>
+          <div className="right-header">
             <IoMdSearch className="search" />
             <button className="button1">Add Listing</button>
             <button className="button2">Login / Join</button>
@@ -30,13 +30,13 @@ const App = () => {
         <section>
           <div>
             <h1>Find Vegan Restaurants Nearby</h1>
-            <div>
+            <div className="search-input">
               <input
                 type="text"
                 placeholder="Search for city, region, or zipcode"
                 size={100}
               />
-              <button>
+              <button className="input-button">
                 <IoMdSearch />
               </button>
             </div>
