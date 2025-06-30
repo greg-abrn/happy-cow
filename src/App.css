@@ -65,3 +65,45 @@ div button {
   color: rgb(124, 78, 196);
   font-size: 28px;
 }
+
+/* MAIN */
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: purple;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: #ffffff;
+  padding: 70px 0 20px 0;
+}
+
+div > div > input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  color: #9a9a9a;
+}
+
+div > div > button {
+  background-color: rgb(124 78 196);
+  color: white;
+  font-size: 28px;
+  border-radius: 0 5px 5px 0;
+}
