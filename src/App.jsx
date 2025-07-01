@@ -8,21 +8,39 @@ const App = () => {
     <>
       <header>
         <nav>
-          <div>
+          <div className="left-header">
             <a href="https://www.happycow.net/">
               <img src={logoHappyCow} alt="Logo Happy Cow" />
             </a>
-            <span>Explore</span>
-            <span>Forum</span>
-            <span>Blog</span>
-            <span>The App</span>
-            <span>Shop</span>
-            <span>More</span>
+            <div className="dropdown">
+              <button className="dropbtn">Explore</button>
+              <div className="dropdown-content">
+                <a href="#">Nearby</a>
+                <span></span>
+                <a href="#">Top Rated</a>
+                <a href="#">B&B Retreats</a>
+                <a href="#">Add a listing</a>
+                <a href="#">Write Review</a>
+              </div>
+            </div>
+            <button className="dropbtn">Forum</button>
+            <button className="dropbtn">Blog</button>
+            <button className="dropbtn">The App</button>
+            <button className="dropbtn">Shop</button>
+            <div className="dropdown">
+              <button className="dropbtn">More</button>
+              <div className="dropdown-content">
+                <a href="#">Recipes</a>
+                <a href="#">Why Vegan?</a>
+                <a href="#">Travel Tips</a>
+                <a href="#">Ressources</a>
+              </div>
+            </div>
           </div>
           <div className="right-header">
-            <IoMdSearch className="search" />
-            <button className="button1">Add Listing</button>
-            <button className="button2">Login / Join</button>
+            <IoMdSearch className="search-header" />
+            <button className="button-add-listing">Add Listing</button>
+            <button className="button-login">Login / Join</button>
           </div>
         </nav>
       </header>
