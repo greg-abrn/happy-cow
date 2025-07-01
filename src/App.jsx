@@ -31,7 +31,7 @@ const App = () => {
               <button className="dropbtn">More</button>
               <div className="dropdown-content">
                 <a href="#">Recipes</a>
-                <a href="#">Why Vegan?</a>
+                <a href="#">Why Vegan ?</a>
                 <a href="#">Travel Tips</a>
                 <a href="#">Ressources</a>
               </div>
