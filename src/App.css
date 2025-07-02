@@ -200,7 +200,7 @@ div > div > button {
 /* MAIN SECOND SECTION */
 
 .container {
-  width: 1150px;
+  width: 1176px;
   margin: 0 auto;
 }
 
@@ -228,7 +228,6 @@ div a {
 }
 
 .vegan-food-near-me {
-  background-color: yellowgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -241,16 +240,26 @@ div a {
 
 .caroussel-bloc {
   height: 350px;
-  background-color: red;
   margin-bottom: 100px;
   display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
   overflow: scroll;
+  gap: 20px;
 }
 
 .caroussel-item {
-  width: calc((100% - 15px) / 4);
-  height: 350px;
+  width: calc((100% - 60px) / 4);
+  height: 100%;
   background-color: lightblue;
+  flex-shrink: 0;
+}
+
+.caroussel-item img {
+  background-color: white;
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caroussel-bloc::-webkit-scrollbar {
+  display: none;
 }

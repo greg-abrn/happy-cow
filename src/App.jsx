@@ -1,5 +1,6 @@
-import { useState } from "react";
+import data from "./assets/happy-cow.json";
 import logoHappyCow from "./img/happycow-logo.svg";
+import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./App.css";
@@ -111,7 +112,12 @@ const App = () => {
             </div>
 
             <div className="caroussel-item">
-              <img src="" alt="" />
+              <img
+                src={data.map((elem) => {
+                  return (key = { placeId });
+                })}
+                alt=""
+              />
               <a href=""></a>
               <p></p>
               <div>
