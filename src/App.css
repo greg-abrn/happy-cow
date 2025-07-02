@@ -76,7 +76,6 @@ header nav {
 header nav div {
   display: flex;
   align-items: center;
-  color: #666;
 }
 
 .button-add-listing {
@@ -129,16 +128,17 @@ div button {
   cursor: pointer;
 }
 
-/* MAIN */
+/* MAIN FIRST SECTION */
 
-section {
+.first-section {
   display: flex;
   flex-direction: column;
   height: 300px;
   background-color: purple;
+  margin-bottom: 100px;
 }
 
-section > div {
+.first-section > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,9 +188,39 @@ div > div > button {
   color: white;
   font-size: 28px;
   background-color: rgb(124 78 196);
+  display: flex;
+  align-items: center;
 }
 
 .input-button:hover {
   cursor: pointer;
   opacity: 80%;
+}
+
+/* MAIN SECOND SECTION */
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+div a {
+  text-decoration: none;
+  color: rgb(124 78 196);
+  font-size: 16px;
+}
+
+.vegan-food-near-me {
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-bottom: 30px;
 }

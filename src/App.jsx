@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logoHappyCow from "./img/happycow-logo.svg";
 import { IoMdSearch } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import "./App.css";
 
 const App = () => {
@@ -16,7 +17,6 @@ const App = () => {
               <button className="dropbtn">Explore</button>
               <div className="dropdown-content">
                 <a href="#">Nearby</a>
-                <span></span>
                 <a href="#">Top Rated</a>
                 <a href="#">B&B Retreats</a>
                 <a href="#">Add a listing</a>
@@ -45,7 +45,7 @@ const App = () => {
         </nav>
       </header>
       <main>
-        <section>
+        <section className="first-section">
           <div>
             <h1>Find Vegan Restaurants Nearby</h1>
             <div className="search-input">
@@ -57,6 +57,208 @@ const App = () => {
               <button className="input-button">
                 <IoMdSearch />
               </button>
+            </div>
+          </div>
+        </section>
+        <section className="container second-section">
+          <div className="vegan-food-near-me">
+            <div>
+              <h2>Vegan Food Near Me</h2>
+            </div>
+            <a href="#">
+              View All <IoIosArrowForward />
+            </a>
+          </div>
+
+          <div className="caroussel-bloc">
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="caroussel-item">
+              <img src="" alt="" />
+              <a href=""></a>
+              <p></p>
+              <div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <p></p>
+              </div>
+              <p></p>
             </div>
           </div>
         </section>
