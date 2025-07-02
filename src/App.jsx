@@ -65,9 +65,10 @@ const App = () => {
             <div>
               <h2>Vegan Food Near Me</h2>
             </div>
-            <a href="#">
-              View All <IoIosArrowForward />
-            </a>
+            <div className="right-second-section">
+              <a href="#">View All</a>
+              <IoIosArrowForward className="chevron" />
+            </div>
           </div>
 
           <div className="caroussel-bloc">

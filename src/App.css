@@ -210,8 +210,21 @@ h2 {
 
 div a {
   text-decoration: none;
+}
+
+.right-second-section {
+  text-decoration: none;
   color: rgb(124 78 196);
   font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.chevron {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .vegan-food-near-me {
@@ -219,8 +232,25 @@ div a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   padding-bottom: 30px;
+}
+
+.caroussel-bloc {
+  height: 350px;
+  background-color: red;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.caroussel-item {
+  width: calc((100% - 15px) / 4);
+  height: 350px;
+  background-color: lightblue;
 }
