@@ -1,5 +1,7 @@
 import data from "./assets/happy-cow.json";
 import logoHappyCow from "./img/happycow-logo.svg";
+import vegan from "./img/category-vegan.svg";
+import vegetarian from "./img/category-vegetarian.svg";
 import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -77,21 +79,20 @@ const App = () => {
               return (
                 <div className="caroussel-item">
                   <img src={restaurant.thumbnail} alt="" />
-                  <p>{restaurant.name}</p>
-                  <p>{restaurant.address}</p>
-                  <div>
-                    <div>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                    <p></p>
+                  <div className="name-restaurant">
+                    {restaurant.category === 0 ? (
+                      <img src={vegan} />
+                    ) : (
+                      <img src={vegetarian} />
+                    )}
+                    <h4>{restaurant.name}</h4>
                   </div>
-                  <p></p>
+                  <p className="adress">{restaurant.address}</p>
+                  <div className="stars">
+                    <p>{restaurant.rating} ⭐️</p>
+                    <p>Number of Review</p>
+                  </div>
+                  <p>{restaurant.description}</p>
                 </div>
               );
             })}
