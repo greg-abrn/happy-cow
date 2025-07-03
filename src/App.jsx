@@ -73,200 +73,28 @@ const App = () => {
           </div>
 
           <div className="caroussel-bloc">
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
+            {data.map((restaurant, index) => {
+              return (
+                <div className="caroussel-item">
+                  <img src={restaurant.thumbnail} alt="" />
+                  <p>{restaurant.name}</p>
+                  <p>{restaurant.address}</p>
+                  <div>
+                    <div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                    <p></p>
+                  </div>
+                  <p></p>
                 </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img
-                src={data.map((elem) => {
-                  return (key = { placeId });
-                })}
-                alt=""
-              />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-
-            <div className="caroussel-item">
-              <img src="" alt="" />
-              <a href=""></a>
-              <p></p>
-              <div>
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
+              );
+            })}
           </div>
         </section>
       </main>
