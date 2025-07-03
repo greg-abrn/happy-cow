@@ -2,7 +2,6 @@ import data from "./assets/happy-cow.json";
 import logoHappyCow from "./img/happycow-logo.svg";
 import vegan from "./img/category-vegan.svg";
 import vegetarian from "./img/category-vegetarian.svg";
-import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./App.css";
@@ -87,12 +86,31 @@ const App = () => {
                     )}
                     <h4>{restaurant.name}</h4>
                   </div>
-                  <p className="adress">{restaurant.address}</p>
+
+                  <p className="address">
+                    {restaurant.address
+                      .split(",")
+                      .reverse()
+                      .join()
+                      .split(",")[2] +
+                      "," +
+                      restaurant.address
+                        .split(",")
+                        .reverse()
+                        .join()
+                        .split(",")[1]}
+                  </p>
+
                   <div className="stars">
                     <p>{restaurant.rating} ⭐️</p>
-                    <p>Number of Review</p>
+                    <p> XX Review</p>
                   </div>
-                  <p>{restaurant.description}</p>
+
+                  {restaurant.description ? (
+                    <p className="description">
+                      {restaurant.description.slice(0, 80) + "..."}
+                    </p>
+                  ) : null}
                 </div>
               );
             })}
